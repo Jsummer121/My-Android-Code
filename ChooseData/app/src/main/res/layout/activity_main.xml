@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--滚动视图,一屏显示不下时，可以采用滑动的方法显示在UI上-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/cc"
+    tools:context=".MainActivity">
+    <!--垂直线性布局，一行显示一个组件-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="@string/date"
+            />
+        <!--日期选择器，设置了组件ID,位置，宽，高-->
+        <DatePicker
+            android:id="@+id/dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:gravity="center" />
+    </LinearLayout>
+
+</ScrollView>
